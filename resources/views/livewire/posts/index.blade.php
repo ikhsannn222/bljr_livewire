@@ -1,3 +1,5 @@
-<div>
-    Index: Close your eyes. Count to one. That is how long forever feels.
+<div class="row">
+    <div class="col-md-6">
+        <livewire:posts.create></livewire>
+    </div>
 </div>

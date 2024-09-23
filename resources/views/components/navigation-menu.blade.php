@@ -9,8 +9,6 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <x-nav-link :active="request()->routeIs('home')" href="/">Home</x-nav-link>
-          <x-nav-link :active="request()->routeIs('about')" href="/about">About</x-nav-link>
-          <x-nav-link :active="request()->routeIs('contact')" href="/contact">Contact</x-nav-link>
           <x-nav-link :active="request()->routeIs('posts.*')" href="/posts">Posts</x-nav-link>
         </ul>
       </div>
