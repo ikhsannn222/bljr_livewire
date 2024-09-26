@@ -8,10 +8,13 @@
     @vite(['resources/js/app.js','resources/css/app.css'])
   </head>
   <body>
-    <x-navigation-menu></x-navigation-menu>
     <main class="py-5">
         <div class="container">
-            {{ $slot }}
+            <div class="row align-items-center min-vh-100 justify-content-center">
+                <div class="col-md-5">
+                    {{ $slot }}
+                </div>
+            </div>
         </div>
     </main>
   </body>
