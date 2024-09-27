@@ -5,14 +5,14 @@
             <form wire:submit="login">
                 <div class="mb-4">
                     <label for="email" class="form-label">email</label>
-                    <input class="form-control" wire:model="email" type="email" name="email" id="email">
-                    @error('email')
+                    <input class="form-control" wire:model="form.email" type="email" name="email" id="email">
+                    @error('form.email')
                     <small class="d-block mt-1 text-danger">{{ $message }}</small>
                     @enderror
                 <div class="mb-4">
                     <label for="password" class="form-label">password</label>
-                    <input class="form-control" wire:model="password" type="password" name="password" id="password">
-                    @error('password')
+                    <input class="form-control" wire:model="form.password" type="password" name="password" id="password">
+                    @error('form.password')
                     <small class="d-block mt-1 text-danger">{{ $message }}</small>
                     @enderror
                 </div>
